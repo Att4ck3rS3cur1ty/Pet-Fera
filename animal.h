@@ -5,14 +5,14 @@
 class Animal{
 	protected: 
 		int m_id;
-		string m_classe;
-		string m_nome_cientifico;
+		std::string m_classe;
+		std::string m_nome_cientifico;
 		char m_sexo;
 		double m_tamanho;
-		string m_dieta;
+		std::string m_dieta;
 		Veterinario m_veterinario;
 		Tratador m_tratador;
-		string m_nome_batismo;
+		std::string m_nome_batismo;
 	public: 
 		Animal();
 		~Animal();
