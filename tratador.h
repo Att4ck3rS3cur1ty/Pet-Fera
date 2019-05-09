@@ -1,7 +1,7 @@
 #ifndef TRATADOR_H
 #define TRATADOR_H
 
-class Tratador{
+class Tratador : public Funcionario{
 	private:
 		int m_nivel_de_seguranca;
 	public:

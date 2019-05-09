@@ -2,7 +2,7 @@
 #define VETERINARIO_H
 #include "funcionario.h"
 
-class Veterinario{
+class Veterinario : public Funcionario{
 	private:
 		private std::string m_crmv;
 	public:
