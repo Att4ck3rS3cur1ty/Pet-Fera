@@ -11,6 +11,8 @@ class Funcionario{
 		char m_fator_rh;
 		std::string m_especialidade;
 	public:
+		// method(type): type?
+		// method(type): type?
 };
 
 #endif
