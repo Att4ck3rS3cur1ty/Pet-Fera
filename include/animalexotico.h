@@ -1,3 +1,6 @@
+#ifndef _ANIMAL_EXOTICO_H_
+#define _ANIMAL_EXOTICO_H_
+
 #include "animalsilvestre"
 
 class animalexotico : public animalsilvestre{
@@ -6,4 +9,6 @@ class animalexotico : public animalsilvestre{
 	public:
 		animalexotico();
 		~animalexotico();
-}
+};
+
+#endif
