@@ -2,6 +2,7 @@
 #define ANIMAL_H
 #include "veterinario.h"
 #include "tratador.h"
+
 class Animal{
 	protected: 
 		int m_id;
