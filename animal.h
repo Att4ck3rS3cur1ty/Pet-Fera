@@ -16,7 +16,7 @@ class Animal{
 	public: 
 		Animal();
 		~Animal();
-		Animal(int m_id, std::string m_nome_cientifico, char m_sexo, double m_tamanho, std::string m_dieta, Veterinario m_veterinario, Tratador m_tratador, std::string m_nome_batismo); // qtd params?
+		Animal(int id, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo); // qtd params?
 		
 };
 
