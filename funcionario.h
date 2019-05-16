@@ -1,6 +1,6 @@
 #ifndef FUNCIONARIO_H
 #define FUNCIONARIO_H
-
+#include <string>
 class Funcionario{
 	protected:
 		int m_id;
