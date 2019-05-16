@@ -16,7 +16,8 @@ class Animal{
 	public: 
 		Animal();
 		~Animal();
-		// Animal(...)
+		Animal(int id, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo); 
+		
 };
 
 #endif
