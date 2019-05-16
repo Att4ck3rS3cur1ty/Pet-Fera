@@ -3,12 +3,14 @@
 
 #include <string>
 
-class animalsilvestre{
+class animalsilvestre : public animal{
 	protected:
-		std::string autorizacao_ibama;
+		std::string m_autorizacao_ibama;
 	public:
-		animalsilvestre(std::string nova_autorizacao_ibama);
+		animalsilvestre(int id, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo, std::string autorizacao_ibama);
 		~animalsilvestre();
+    void setAutorizacao_ibama(std::string autorizacao_ibama);
+    std::string getAutorizacao_ibama();
 };
 
 #endif
