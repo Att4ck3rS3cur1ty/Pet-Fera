@@ -14,7 +14,7 @@ class Anfibio : public Animal
 		~Anfibio();
 		
 		//Preencher os atributos da classe anfibio
-		bool preencher_atributos_anfibio();
+		bool preencher_atributos_classe();
 		
 		//Acessar o numero total de mudas
 		int getTotalMudas();
