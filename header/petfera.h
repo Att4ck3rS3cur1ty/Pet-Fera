@@ -6,6 +6,10 @@ class Petfera{
 	public:
 		Petfera();	
 		~Petfera();
+/*		void CadastrarAnimal();
+		void RemoverAnimal();
+		void AlterarAnimal();
+*/		
 };
 
 #endif 

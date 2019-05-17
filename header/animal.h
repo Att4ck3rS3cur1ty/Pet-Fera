@@ -15,6 +15,27 @@ class Animal{
 		Tratador m_tratador;
 		std::string m_nome_batismo;
 	public: 
+		// getters
+		int getId();
+		std::string getClasse();
+		std::string getNomeCientifico();
+		char getSexo();
+		double getTamanho();
+		std::string getDieta();
+		Veterinario getVeterinario();
+		Tratador getTratador();
+		std::string getNomeBatismo();
+		
+		// setters
+		void setClasse(std::string classe);
+		void setNomeCientifico(std::string nome_cientifico);
+		void setSexo(char sexo);
+		void setTamanho(double tamanho);
+		void setDieta(std::string dieta);
+		void setVeterinario(Veterinario veterinario);
+		void setTratador(Tratador tratador);
+		void setNomeBatismo(std::string nome_batismo);
+
 		Animal();
 		~Animal();
 		Animal(int id, std::string nome_cientifico, char sexo, double tamanho, 
