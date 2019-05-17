@@ -3,7 +3,7 @@
 #include <iostream>
 
 	Anfibio::Anfibio(){};
-	Anfibio::Anfibio(int m_id,std::string m_nome, std::string m_nome_cientifico, std::string m_classe, char sexo, float m_tamanho, std::string m_dieta, std::string m_nome_batismo, Veterinario m_veterinario, Tratadir m_tratador, int m_total_mudas, std::string m_ultima_muda):Animal(m_id, m_nome, m_nome_cientifico, m_classe, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador), m_total_mudas(m_total_mudas), ultima_muda(ultima_muda){}
+	Anfibio::Anfibio(int id,std::string nome, std::string nome_cientifico, std::string classe, char sexo, float tamanho, std::string dieta, std::string nome_batismo, Veterinario veterinario, Tratadir tratador, int total_mudas, std::string ultima_muda):Animal(m_id, m_nome, m_nome_cientifico, m_classe, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador), m_total_mudas(m_total_mudas), ultima_muda(ultima_muda){}
 	Anfibio::~Anfibio(){}
 	
 	//Preencher os atributos da classe anfibio
@@ -22,10 +22,10 @@
 }
 	
 	//Alterar o total de mudas
-	void Anfibio::setTotalMudas(int m_total_mudas){
-		this->m_total_mudas = m_total_mudas;
+	void Anfibio::setTotalMudas(int total_mudas){
+		this->total_mudas = m_total_mudas;
 }
 	//Alterar a ultima muda
-	void Anfibio::setUltimaMuda(std::string m_ultima_muda){
-		this->m_ultima_muda = m_ultima_muda;
+	void Anfibio::setUltimaMuda(std::string ultima_muda){
+		this->m_ultima_muda = ultima_muda;
 }

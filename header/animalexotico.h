@@ -5,10 +5,12 @@
 
 class animalexotico : public animalsilvestre{
 	protected:
-		std::string Pais_de_origem;
+		std::string m_Pais_de_origem;
 	public:
-		animalexotico(std::string nova_autorizacao_ibama, std::string Pais_de_origem);
+		animalexotico(int id, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo, std::string autorizacao_ibama, std::string Pais_de_origem);
 		~animalexotico();
+    void setPais_de_origem(std::string Pais_de_origem);
+    std::string getPais_de_origem();
 };
 
 #endif
