@@ -10,7 +10,7 @@ class Anfibio : public Animal
 		std::string m_ultima_muda;
 	public:
 		Anfibio();
-		Anfibio(int m_id, std::string m_nome, std::string m_nome_cientifico, char m_sexo,float m_tamanho, std::string m_dieta, Veterinario m_veterinario, Tratador m_tratador, std::string m_nome_batismo, int m_total_mudas, std::string m_ultima_muda);
+		Anfibio(int id, std::string nome, std::string nome_cientifico, char sexo,float tamanho, std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo, int total_mudas, std::string ultima_muda);
 		~Anfibio();
 		
 		//Preencher os atributos da classe anfibio
@@ -23,7 +23,7 @@ class Anfibio : public Animal
 		std::string getUltimaMuda();
 
 		//Alterar o total de mudas
-		void setTotalMudas(int m_total_mudas);
+		void setTotalMudas(int total_mudas);
 
 		//Alterar a ultima muda
 		void setUltimaMuda(std::string ultima_muda);
