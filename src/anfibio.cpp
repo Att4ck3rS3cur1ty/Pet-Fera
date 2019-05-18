@@ -3,7 +3,7 @@
 #include <iostream>
 
 	Anfibio::Anfibio(){}
-	Anfibio::Anfibio(int id,std::string nome, std::string nome_cientifico, std::string classe, char sexo, float tamanho, std::string dieta, std::string nome_batismo, Veterinario veterinario, Tratadir tratador, int total_mudas, std::string ultima_muda):Animal(m_id, m_nome, m_nome_cientifico, m_classe, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador), m_total_mudas(m_total_mudas), ultima_muda(ultima_muda){}
+	Anfibio::Anfibio(int id,std::string nome, std::string nome_cientifico, std::string classe, char sexo, float tamanho, std::string dieta, std::string nome_batismo, Veterinario veterinario, Tratadir tratador, int total_mudas, std::string ultima_muda):Animal(Id, m_nome, m_nome_cientifico, m_classe, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador), m_total_mudas(m_total_mudas), ultima_muda(ultima_muda){}
 	Anfibio::~Anfibio(){}
 	
 	//Preencher os atributos da classe anfibio

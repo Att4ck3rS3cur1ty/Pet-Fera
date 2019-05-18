@@ -3,7 +3,7 @@
 #include <iostream>
 #include "animal.h"
 
-class mamifero : public Animal {
+class Mamifero : public Animal {
 	
 	protected:
 		std::string m_cor_pelo;
