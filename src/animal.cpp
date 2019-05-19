@@ -73,7 +73,7 @@ void Animal::setNomeBatismo(std::string nome_batismo){
 	m_nome_batismo = nome_batismo;
 }
 
-Animal::Animal(): m_id(0), m_classe(""), m_nome_cientifico(""), 
+Animal::Animal(int i): m_id(i), m_classe(""), m_nome_cientifico(""), 
 	m_sexo('0'), m_tamanho(0), m_dieta(""), m_veterinario(""), m_tratador(""), m_nome_batismo(""){
 
 }

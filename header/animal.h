@@ -36,10 +36,10 @@ class Animal{
 		void setTratador(Tratador tratador);
 		void setNomeBatismo(std::string nome_batismo);
 
-		Animal();
+		Animal(int i);
 		~Animal();
-		Animal(int id, std::string nome_cientifico, char sexo, double tamanho, 
-		std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo); 
+//		Animal(int id, std::string nome_cientifico, char sexo, double tamanho, 
+//		std::string dieta, Veterinario veterinario, Tratador tratador, std::string nome_batismo); 
 		
 };
 
