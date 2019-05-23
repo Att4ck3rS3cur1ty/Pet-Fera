@@ -1,6 +1,6 @@
 #include "animalexotico.h"
 
-animalexotico::animalexotico(std::string autorizacao_ibama, std::string Pais_de_origem):animalsilvestre(autorizacao_ibama), m_Pais_de_origem(Pais_de_origem) {};
+animalexotico::animalexotico(int i, std::string autorizacao_ibama, std::string Pais_de_origem):animalsilvestre(int i, autorizacao_ibama), m_Pais_de_origem(Pais_de_origem) {};
 
 animalexotico::~animalexotico() {};
 

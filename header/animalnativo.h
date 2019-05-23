@@ -7,7 +7,7 @@ class animalnativo : public animalsilvestre{
 	protected:
 		std::string m_UF_de_origem;
 	public:
-		animalnativo(std::string autorizacao_ibama, std::string UF_de_origem);
+		animalnativo(int i, std::string autorizacao_ibama, std::string UF_de_origem);
 		~animalnativo();
     void setUF_de_origem(std::string UF_de_origem);
     std::string getUF_de_origem();
