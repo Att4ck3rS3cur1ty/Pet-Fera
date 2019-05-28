@@ -1,12 +1,14 @@
 #ifndef _REPTIL_EXOTICO_H_
 #define _REPTIL_EXOTICO_H_
 
+#include "reptil.h"
 #include "animalexotico.h"
 
-class reptilexotico : public animalexotico{
+class reptilexotico : public animalexotico, public Reptil{
   public:
+    reptilexotico();
     reptilexotico(std::string autorizacao_ibama, std::string Pais_de_origem);
     ~reptilexotico();
-}
+};
 
 #endif
