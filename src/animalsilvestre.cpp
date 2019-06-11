@@ -1,4 +1,4 @@
-#include "animalsilvestre.h"
+#include "../header/animalsilvestre.h"
 
 animasilvestre::animasilvestre(){}
 

@@ -1,4 +1,4 @@
-#include "animalnativo.h"
+#include "../header/animalnativo.h"
 
 animalnativo::animalnativo(){}
 

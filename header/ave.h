@@ -8,6 +8,10 @@ class Ave : public Animal{
 	public:
 		Ave();
 		~Ave();
+    double getM_tamanho_do_bico_cm();
+    void setM_tamanho_do_bico_cm(double tamanho_do_bico_cm)
+    double getM_envergadura_das_asas();
+    void setM_envergadura_das_asas(double envergadura_das_asas);
 };	
 
 #endif

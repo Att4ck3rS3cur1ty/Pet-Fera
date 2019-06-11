@@ -1,4 +1,4 @@
-#include "funcionario.h"
+#include "../header/funcionario.h"
 
 // getters
 int Funcionario::getId(){
@@ -57,4 +57,6 @@ void Funcionario::setEspecialidade(std::string especialidade){
 
 Funcionario::Funcionario(int i): m_id(i), m_cpf(""), m_idade(0), m_tipo_sanguineo(""), m_fator_rh(""), m_especialidade(""){
 
-}
+};
+
+Funcionario::~Funcionario(){};

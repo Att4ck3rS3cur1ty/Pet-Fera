@@ -1,5 +1,6 @@
 #ifndef TRATADOR_H
 #define TRATADOR_H
+#include "funcionario.h"
 
 class Tratador : public Funcionario{
 	private:
@@ -7,6 +8,8 @@ class Tratador : public Funcionario{
 	public:
 		Tratador();
 		~Tratador();
+    int getM_nivel_de_seguranca();
+    void setM_nivel_de_seguranca(int nivel_de_seguranca);
 };
 
 #endif

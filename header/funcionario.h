@@ -1,5 +1,7 @@
 #ifndef FUNCIONARIO_H
 #define FUNCIONARIO_H
+#include <iostream>
+#include <string>
 
 class Funcionario{
 	protected:
@@ -30,6 +32,7 @@ class Funcionario{
 	
 		// construtores e destrutores 
 		Funcionario(int i);
+    Funcionario();
 		~Funcionario();
 //		Funcionario(int id, std::string cpf, short idade,
 //				short tipo_sanguineo, char fator_rh, std::string especialidade);

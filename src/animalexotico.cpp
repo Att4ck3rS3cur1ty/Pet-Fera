@@ -1,4 +1,4 @@
-#include "animalexotico.h"
+#include "../header/animalexotico.h"
 
 animaexotico::animaexotico(){}
 

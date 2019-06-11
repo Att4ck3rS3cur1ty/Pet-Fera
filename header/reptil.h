@@ -8,6 +8,10 @@ class Reptil : public Animal{
 	public:
 		Reptil();
 		~Reptil();
+    bool getM_venenoso();
+    void setM_venenoso(bool venenoso);
+    std::string getM_tipo_veneno();
+    void setM_tipo_veneno(std::string tipo_veneno);
 };
 
 #endif
