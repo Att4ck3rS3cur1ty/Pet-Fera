@@ -1,6 +1,6 @@
 #include "../header/reptil.h"
 
-Reptil::Reptil(){};
+Reptil::Reptil():Animal(){};
 
 Reptil::~Reptil(){};
 

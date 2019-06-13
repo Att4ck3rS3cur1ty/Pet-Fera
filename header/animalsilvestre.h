@@ -7,7 +7,6 @@ class animalsilvestre : public Animal{
 		std::string m_autorizacao_ibama;
 	public:
     animalsilvestre();
-		animalsilvestre(int i, std::string autorizacao_ibama);
 		~animalsilvestre();
     void setAutorizacao_ibama(std::string autorizacao_ibama);
     std::string getAutorizacao_ibama();

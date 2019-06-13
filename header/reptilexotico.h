@@ -7,7 +7,6 @@
 class reptilexotico : public animalexotico, public Reptil{
   public:
     reptilexotico();
-    reptilexotico(std::string autorizacao_ibama, std::string Pais_de_origem);
     ~reptilexotico();
 };
 

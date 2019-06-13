@@ -22,7 +22,7 @@ class Petfera{
 	public:
 		Petfera();	
 		~Petfera();
-/*		void CadastrarAnimal();
+/*  	void CadastrarAnimal();
 		void RemoverAnimal();
 		void AlterarAnimal();
 */		

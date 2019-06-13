@@ -7,7 +7,6 @@
 class mamiferonativo : public animalnativo, public Mamifero{
   public:
     mamiferonativo();
-    mamiferonativo(std::string autorizacao_ibama, std::string UF_de_origem);
     ~mamiferonativo();
 };
 

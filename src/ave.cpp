@@ -1,6 +1,6 @@
 #include "../header/ave.h"
 
-Ave::Ave(){};
+Ave::Ave():Animal(){};
 
 Ave::~Ave(){};
 

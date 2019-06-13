@@ -8,6 +8,6 @@ void Tratador::setM_nivel_de_seguranca(int nivel_de_seguranca){
   m_nivel_de_seguranca = nivel_de_seguranca;
 }
 
-Tratador::Tratador(){};
+Tratador::Tratador():Funcionario(){};
 
 Tratador::~Tratador(){};

@@ -7,7 +7,6 @@
 class reptilnativo : public animalnativo, public Reptil{
   public:
     reptilnativo();
-    reptilnativo(std::string autorizacao_ibama, std::string UF_de_origem);
     ~reptilnativo();
 };
 

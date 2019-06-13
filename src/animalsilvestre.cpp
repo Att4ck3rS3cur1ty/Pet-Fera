@@ -1,8 +1,6 @@
 #include "../header/animalsilvestre.h"
 
-animasilvestre::animasilvestre(){}
-
-animalsilvestre::animalsilvestre(int i, std::string autorizacao_ibama): Animal(int i) m_autorizacao_ibama(autorizacao_ibama) {};
+animalsilvestre::animalsilvestre():Animal(){};
 
 animalsilvestre::~animalsilvestre() {};
 

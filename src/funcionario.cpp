@@ -9,7 +9,7 @@ std::string Funcionario::getNome(){
 	return m_nome;
 }
 
-std::string Funcionario::setCpf(){
+std::string Funcionario::getCpf(){
 	return m_cpf;
 }
 
@@ -55,8 +55,8 @@ void Funcionario::setEspecialidade(std::string especialidade){
 	m_especialidade = especialidade;
 }
 
-Funcionario::Funcionario(int i): m_id(i), m_cpf(""), m_idade(0), m_tipo_sanguineo(""), m_fator_rh(""), m_especialidade(""){
+// Construtor & Destrutor
 
-};
+Funcionario::Funcionario(){};
 
 Funcionario::~Funcionario(){};

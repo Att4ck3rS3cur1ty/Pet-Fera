@@ -7,7 +7,6 @@
 class anfibionativo : public animalnativo, public Anfibio{
   public:
     anfibionativo();
-    anfibionativo(std::string autorizacao_ibama, std::string UF_de_origem);
     ~anfibionativo();
 };
 

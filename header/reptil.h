@@ -1,5 +1,6 @@
 #ifndef REPTIL_H
 #define REPTIL_H
+#include "animal.h"
 
 class Reptil : public Animal{
 	protected:

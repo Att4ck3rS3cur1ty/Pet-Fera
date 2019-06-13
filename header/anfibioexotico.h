@@ -7,7 +7,6 @@
 class anfibioexotico : public animalexotico, public Anfibio{
   public:
     anfibioexotico();
-    anfibioexotico(std::string autorizacao_ibama, std::string Pais_de_origem);
     ~anfibioexotico();
 };
 

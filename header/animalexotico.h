@@ -9,7 +9,6 @@ class animalexotico : public animalsilvestre{
 		std::string m_Pais_de_origem;
 	public:
     animalexotico();
-		animalexotico(int i, std::string autorizacao_ibama, std::string Pais_de_origem);
 		~animalexotico();
     void setPais_de_origem(std::string Pais_de_origem);
     std::string getPais_de_origem();
