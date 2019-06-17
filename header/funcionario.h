@@ -9,7 +9,7 @@ class Funcionario{
 		std::string m_nome;
 		std::string m_cpf;
 		short m_idade;
-		short m_tipo_sanguineo;
+		std::string m_tipo_sanguineo;
 		char m_fator_rh;
 		std::string m_especialidade;
   public:
@@ -18,20 +18,22 @@ class Funcionario{
 		std::string getNome();
 		std::string getCpf();
 		short getIdade();
-		short getTipoSanguineo();
+		std::string getTipoSanguineo();
 		char getFatorRh();
 		std::string getEspecialidade();
 
 		// setters
+    void setId(int id);
 		void setNome(std::string nome);
 		void setCpf(std::string cpf);
 		void setIdade(short idade);
-		void setTipoSanguineo(short tipo_sanguineo);
+		void setTipoSanguineo(std::string tipo_sanguineo);
 		void setFatorRh(char fator_rh);
 		void setEspecialidade(std::string especialidade);
 
     // Construtor & Destrutor
     Funcionario();
+    Funcionario(int id, std::string nome, std::string cpf, short idade, std::string tipo_sanguineo, char fator_rh, std::string especialidade);
     ~Funcionario();
 };
 

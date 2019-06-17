@@ -1,0 +1,54 @@
+﻿#Makefile para "Projeto Pet Fera"
+#Criado por Matheus Menezes
+
+PROG = Pet_Fera
+CC = g++
+CPPFLAGS = -O0 -g –Wall –std=c++11 –I/usr/Petfera/header
+LDFLAGS = -L/usr/Petfera/lib –lmylib
+OBJS = main.o anfibio.o anfibionativo.o anfibioexotico.o animal.o animalnativo.o animalexotico.o animalsilvestre.o ave.o avenativo.o aveexotico.o mamifero.o mamiferonativo.o mamiferoexotico.o reptil.o reptilnativo.o reptilexotico.o funcionario.o tratador.o veterinario.o petfera.o
+$(PROG) : $(OBJS)
+    $(CC) $(LDFLAGS) -o $(PROG) $(OBJS)
+main.o :
+    $(CC) $(CPPFLAGS) -c main.cpp
+anfibio.o :
+    $(CC) $(CPPFLAGS) -c src/anfibio.cpp
+anfibioexotico.o :
+    $(CC) $(CPPFLAGS) -c src/anfibioexotico.cpp
+anfibionativo.o :
+    $(CC) $(CPPFLAGS) -c src/anfibionativo.cpp
+animal.o :
+    $(CC) $(CPPFLAGS) -c src/animal.cpp
+animalnativo.o :
+    $(CC) $(CPPFLAGS) -c src/animalnativo.cpp
+animalexotico.o :
+    $(CC) $(CPPFLAGS) -c src/animalexotico.cpp
+animalsilvestre.o :
+    $(CC) $(CPPFLAGS) -c src/animalsilvestre.cpp
+ave.o :
+    $(CC) $(CPPFLAGS) -c src/ave.cpp
+avenativo.o :
+    $(CC) $(CPPFLAGS) -c src/avenativo.cpp
+aveexotico.o :
+    $(CC) $(CPPFLAGS) -c src/aveexotico.cpp
+mamifero.o :
+    $(CC) $(CPPFLAGS) -c src/mamifero.cpp
+mamiferonativo.o : 
+    $(CC) $(CPPFLAGS) -c src/mamiferonativo.cpp
+mamiferoexotico.o :
+    $(CC) $(CPPFLAGS) -c src/mamiferoexotico.cpp
+reptil.o :
+    $(CC) $(CPPFLAGS) -c src/reptil.cpp
+reptilnativo.o :
+    $(CC) $(CPPFLAGS) -c src/reptilnativo.cpp
+reptilexotico.o :
+    $(CC) $(CPPFLAGS) -c src/reptilexotico.cpp
+funcionario.o :
+    $(CC) $(CPPFLAGS) -c src/funcionario.cpp
+tratador.o :
+    $(CC) $(CPPFLAGS) -c src/tratador.cpp
+veterinario.o :
+    $(CC) $(CPPFLAGS) -c src/veterinario.cpp
+petfera.o :
+    $(CC) $(CPPFLAGS) -c src/petfera.cpp
+clean :
+    rm -f core $(PROG) $(OBJS)
