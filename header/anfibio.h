@@ -6,25 +6,23 @@
 class Anfibio : public Animal
 {
 	protected:
+		/** @brief Define todal de mudas de pele do anfibio*/
 		int m_total_mudas;
+		/** @brief Define data da ultima muda de pele*/
 		std::string m_ultima_muda;
 	public:
 		Anfibio();
+    	Anfibio(int Id, std::string Classe, std::string NomeCientifico, char Sexo, double Tamanho, std::string Dieta, Veterinario Novo_Veterinario, Tratador Novo_Tratador, std::string NomeBatismo, int total_mudas, std::string ultima_muda);
 		~Anfibio();
 		
-		//Acessar o numero total de mudas
 		int getTotalMudas();
 		
-		//Acessar a ultima muda
 		std::string getUltimaMuda();
 
-		//Alterar o total de mudas
 		void setTotalMudas(int total_mudas);
 
-		//Alterar a ultima muda
 		void setUltimaMuda(std::string ultima_muda);
 
-		//Fazer algo pra imprimir os dados depois
 };
 
 #endif

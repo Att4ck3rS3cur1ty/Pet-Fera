@@ -39,6 +39,10 @@ std::string Animal::getNomeBatismo(){
 	return m_nome_batismo;
 }
 
+std::string Animal::getNativo_ou_exotico(){
+	return m_nativo_ou_exotico;
+}
+
 // setters
 
 void Animal::setClasse(std::string classe){
@@ -73,6 +77,12 @@ void Animal::setNomeBatismo(std::string nome_batismo){
 	m_nome_batismo = nome_batismo;
 }
 
+void Animal::setNativo_ou_exotico(std::string nativo_ou_exotico){
+  m_nativo_ou_exotico = nativo_ou_exotico;
+}
+
 Animal::Animal(){}
+
+Animal::Animal(int Id, std::string Classe, std::string NomeCientifico, char Sexo, double Tamanho, std::string Dieta, Veterinario Novo_Veterinario, Tratador Novo_Tratador, std::string NomeBatismo): m_id(Id), m_classe(Classe), m_nome_cientifico(NomeCientifico), m_sexo(Sexo), m_tamanho(Tamanho), m_dieta(Dieta), m_veterinario(Novo_Veterinario), m_tratador(Novo_Tratador), m_nome_batismo(NomeBatismo){};
 
 Animal::~Animal(){}

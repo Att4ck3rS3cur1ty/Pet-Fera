@@ -6,12 +6,13 @@
 
 class animalexotico : public animalsilvestre{
 	protected:
+		/** @brief Define pais de origem do animal*/
 		std::string m_Pais_de_origem;
 	public:
-    animalexotico();
+    	animalexotico();
 		~animalexotico();
-    void setPais_de_origem(std::string Pais_de_origem);
-    std::string getPais_de_origem();
+    	void setPais_de_origem(std::string Pais_de_origem);
+    	std::string getPais_de_origem();
 };
 
 #endif

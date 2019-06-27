@@ -24,26 +24,42 @@ using std::pair;
 #include "mamiferonativo.h"
 
 class Petfera{
-  private:
-    map<int, Tratador> Lista_de_Tratadores;
-    map<int, Veterinario> Lista_de_Veterinarios;
-    map<int, Ave> Lista_de_Aves;
-    map<int, Anfibio> Lista_de_Anfibios;
-    map<int, Mamifero> Lista_de_Mamiferos;
-    map<int, Reptil> Lista_de_Repteis;
+    private:
+        /** @brief Define lista dos funcionários catalogada por IDs*/
+        map<int, Funcionario*> Lista_de_Funcionarios;
+        /** @brief Define lista dos animais catalogada por IDs*/
+        map<int, Animal*> Lista_de_Animais;
 	public:
 		Petfera();	
 		~Petfera();
-    void cadastrar_funcionario();
-    void cadastrar_tratador();
-    void cadastrar_veterinario();
-    void registrar_funcionarios();
-    void extrair_funcionarios();
-    bool funcionario_busca_id(int my_id);
-/*  	void CadastrarAnimal();
-		void RemoverAnimal();
-		void AlterarAnimal();
-*/		
+        /** @brief Cadastra novo animal na lista*/
+        void cadastrar_animal();
+        /** @brief Registra animais da lista em arquivo CSV*/
+        void registrar_animais();
+        /** @brief Extrai lista de animais de arquivo CSV*/
+        void extrair_animais();
+        /** @brief Cadastra novo funcionário*/
+        void cadastrar_funcionario();
+        /** @brief Cadastra novo funcionário como tratador*/
+        void cadastrar_tratador();
+        /** @brief Cadastra novo funcionário como veterinário*/
+        void cadastrar_veterinario();
+        /** @brief Registra funcionários da lista em arquivo CSV*/
+        void registrar_funcionarios();
+        /** @brief Extrai lista de funcionários de arquivo CSV*/
+        void extrair_funcionarios();
+        /** 
+        * @brief Função que faz busca de ID na lista de funcionários
+        * @param my_id ID do funcionário a ser procurado
+        * @return Booleana da presença ou não do funcionário na lista
+        */
+        bool funcionario_busca_id(int my_id);
+        /** 
+        * @brief Função que faz busca de ID na lista de animais
+        * @param my_id ID do animal a ser procurado
+        * @return Booleana da presença ou não do animal na lista
+        */
+        bool animal_busca_id(int my_id);	
 };
 
 #endif 

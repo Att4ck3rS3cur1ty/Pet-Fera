@@ -5,16 +5,26 @@
 
 class Funcionario{
 	protected:
+		/** @brief Define identificação do fucionário*/
 		int m_id;
+		/** @brief Define função exercida pelo funcionário*/
+    	std::string m_funcao;
+    	/** @brief Define nome do funcionário*/
 		std::string m_nome;
+		/** @brief Define CPF do funcionário*/
 		std::string m_cpf;
+		/** @brief Define idade do funcionário*/
 		short m_idade;
+		/** @brief Define tipo sanguineo do funcionário (A, B, AB ou O)*/
 		std::string m_tipo_sanguineo;
+		/** @brief Define o fator RH do funcionário (+ ou -)*/
 		char m_fator_rh;
+		/** @brief Define em que tipo de animais o funcionario tem especialidade*/
 		std::string m_especialidade;
-  public:
-		// getters
+  	public:
+
 		int getId();
+    	std::string getFuncao();
 		std::string getNome();
 		std::string getCpf();
 		short getIdade();
@@ -22,8 +32,9 @@ class Funcionario{
 		char getFatorRh();
 		std::string getEspecialidade();
 
-		// setters
-    void setId(int id);
+
+    	void setId(int id);
+    	void setFuncao(std::string funcao);
 		void setNome(std::string nome);
 		void setCpf(std::string cpf);
 		void setIdade(short idade);
@@ -31,10 +42,9 @@ class Funcionario{
 		void setFatorRh(char fator_rh);
 		void setEspecialidade(std::string especialidade);
 
-    // Construtor & Destrutor
-    Funcionario();
-    Funcionario(int id, std::string nome, std::string cpf, short idade, std::string tipo_sanguineo, char fator_rh, std::string especialidade);
-    ~Funcionario();
+    	Funcionario();
+    	Funcionario(int id, std::string funcao, std::string nome, std::string cpf, short idade, std::string tipo_sanguineo, char fator_rh, std::string especialidade);
+    	~Funcionario();
 };
 
 #endif

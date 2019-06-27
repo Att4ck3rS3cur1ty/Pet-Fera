@@ -5,16 +5,16 @@
 class Mamifero : public Animal {
 	
 	protected:
+		/** @brief Define cor do pelo do animal*/
 		std::string m_cor_pelo;
 	public:
 		Mamifero();
+    	Mamifero(int Id, std::string Classe, std::string NomeCientifico, char Sexo, double Tamanho, std::string Dieta, Veterinario Novo_Veterinario, Tratador Novo_Tratador, std::string NomeBatismo, std::string cor_pelo);
 		~Mamifero();
 	
-	//Acessar o atribulo da cor do pelo
-	std::string getCorPelo();
+		std::string getCorPelo();
 
-	//Alterar o atributo da cor do pelo	
-	void setCorPelo(std::string cor_pelo);
+		void setCorPelo(std::string cor_pelo);
 };
 
 #endif
