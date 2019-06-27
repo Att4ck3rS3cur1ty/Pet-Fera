@@ -9,8 +9,4 @@
 * @date 27/06/2019
 */
 int main() {
-  Petfera teste;
-  teste.cadastrar_animal();
-  teste.registrar_funcionarios();
-  teste.registrar_animais();
 }

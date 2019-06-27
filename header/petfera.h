@@ -38,6 +38,12 @@ class Petfera{
         void registrar_animais();
         /** @brief Extrai lista de animais de arquivo CSV*/
         void extrair_animais();
+        /** 
+        * @brief Função que faz busca de ID na lista de animais
+        * @param my_id ID do animal a ser procurado
+        * @return Booleana da presença ou não do animal na lista
+        */
+        bool animal_busca_id(int my_id);
         /** @brief Cadastra novo funcionário*/
         void cadastrar_funcionario();
         /** @brief Cadastra novo funcionário como tratador*/
@@ -53,13 +59,7 @@ class Petfera{
         * @param my_id ID do funcionário a ser procurado
         * @return Booleana da presença ou não do funcionário na lista
         */
-        bool funcionario_busca_id(int my_id);
-        /** 
-        * @brief Função que faz busca de ID na lista de animais
-        * @param my_id ID do animal a ser procurado
-        * @return Booleana da presença ou não do animal na lista
-        */
-        bool animal_busca_id(int my_id);	
+        bool funcionario_busca_id(int my_id);	
 };
 
 #endif 
