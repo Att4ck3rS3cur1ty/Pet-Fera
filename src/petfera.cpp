@@ -132,9 +132,9 @@ void Petfera::cadastrar_animal(){
   if(count_vet != 0){
     while(teste == true){
       cout << "Insira o ID do Tratador encarregado ao animal: ";
-      cin >> vet_id;
-      map<int, Funcionario*>::iterator busca_vet = Lista_de_Funcionarios.find(vet_id);
-      if(busca_vet->first == vet_id){
+      cin >> tra_id;
+      map<int, Funcionario*>::iterator busca_vet = Lista_de_Funcionarios.find(tra_id);
+      if(busca_vet->first == tra_id){
         Tratador* Pointer_Tratador = (Tratador*) busca_vet->second;
         Novo_Tratador = *(Pointer_Tratador);
         teste = false;
