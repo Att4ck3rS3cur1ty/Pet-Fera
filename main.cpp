@@ -10,4 +10,7 @@
 */
 int main() {
   Petfera teste;
+  teste.cadastrar_animal();
+  teste.registrar_funcionarios();
+  teste.registrar_animais();
 }

@@ -404,7 +404,10 @@ void Petfera::cadastrar_tratador(){
   while(teste == true){
     cout << "Insira o id do funcionário: ";
     cin >> id;
-    funcionario_busca_id(id);
+    teste = funcionario_busca_id(id);
+    if(teste == true){
+      cout << "Id já existe. Tente novo valor.";
+    }
   }
   cout << "Insira o nome do funcionário: ";
   string nome;
